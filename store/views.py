@@ -2,6 +2,7 @@ from django.shortcuts import render,get_object_or_404
 from .models import Product
 from category.models import Category
 from carts.models import CartItem
+from django.template import RequestContext
 # Create your views here.
 from carts.views import _cart_id
 from django.http import HttpResponse

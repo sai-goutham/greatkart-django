@@ -3,7 +3,7 @@ from store.models import Product,Variation
 from .models import Cart,CartItem
 from django.core.exceptions  import ObjectDoesNotExist
 from django.http import HttpResponse
-
+from django.template import RequestContext
 # Create your views here.
 def _cart_id(request):
     cart=request.session.session_key
